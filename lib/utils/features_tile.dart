@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 
 class FeaturesTile extends StatelessWidget {
-  final IconData icon;
+  final String icon;
   final String text;
+
   const FeaturesTile({super.key, required this.icon, required this.text});
 
   @override
@@ -30,8 +31,18 @@ class FeaturesTile extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            IconButton(onPressed: (){}, icon: Icon(icon)),
-            Text(text),
+            Image.asset(
+              icon,
+              height: 30,
+              width: 30,
+            ),
+            const SizedBox(
+              height: 7,
+            ),
+            Text(
+              text,
+              style: const TextStyle(fontSize: 12),
+            ),
           ],
         ),
       ),

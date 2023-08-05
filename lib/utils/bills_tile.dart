@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class BillsTile extends StatelessWidget {
-  final IconData icon;
+  final String icon;
   final String text;
   const BillsTile({super.key, required this.icon, required this.text});
 
@@ -29,7 +29,7 @@ class BillsTile extends StatelessWidget {
               ),
             ],
           ),
-          child: IconButton(onPressed: (){}, icon: Icon(icon)),
+          child: Image.asset(icon),
         ),
         const SizedBox(height: 5,),
         Text(text)

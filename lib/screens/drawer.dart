@@ -12,24 +12,7 @@ class DrawerView extends StatelessWidget {
       backgroundColor: Colors.grey[50],
       appBar: AppBar(
         automaticallyImplyLeading: false,
-        title: const Column(
-          crossAxisAlignment: CrossAxisAlignment.end,
-          children: [
-            Text(
-              'branchX',
-              style: TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-            Text(
-              'Banking for Bharat',
-              style: TextStyle(
-                fontSize: 8,
-              ),
-            )
-          ],
-        ),
+        title: Image.asset('assets/images/drawer/branchX.png', height: 30,),
         actions: [
           IconButton(
             onPressed: () {
@@ -43,11 +26,11 @@ class DrawerView extends StatelessWidget {
       ),
       body: GridView.builder(
         physics: const NeverScrollableScrollPhysics(),
-        itemCount: gridItems.length,
+        itemCount: gridDrawerItems.length,
         gridDelegate:
             const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3),
         itemBuilder: (context, index) {
-          final data = gridItems[index];
+          final data = gridDrawerItems[index];
           return FeaturesTile(
             icon: data.icon,
             text: data.text,
@@ -59,27 +42,22 @@ class DrawerView extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            const Row(
+             Row(
               children: [
-                SizedBox(
+                const SizedBox(
                   width: 10,
                 ),
-                Icon(Icons.account_box_outlined),
-                SizedBox(
+                Image.asset('assets/images/drawer/user.png'),
+                const SizedBox(
                   width: 20,
                 ),
-                Text('Rahul'),
-                SizedBox(
+                const Text('Rahul'),
+                const SizedBox(
                   width: 20,
                 ),
               ],
             ),
-            IconButton(
-              onPressed: () {},
-              icon: const Icon(
-                Icons.power_settings_new_outlined,
-              ),
-            ),
+            Image.asset('assets/images/drawer/Power button.png')
           ],
         ),
       ),

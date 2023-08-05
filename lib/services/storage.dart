@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 
 import '../models/grid_model.dart';
 
@@ -35,19 +34,41 @@ final List<Map<String, dynamic>> storyData = [
 ];
 
 
-final List<GridItem> gridItems = [
-  GridItem(icon: Icons.home, text: 'Home'),
-  GridItem(icon: Icons.person, text: 'Profile'),
-  GridItem(icon: Icons.settings, text: 'Settings'),
-  GridItem(icon: Icons.camera, text: 'Camera'),
-  GridItem(icon: Icons.mail, text: 'Mail'),
-  GridItem(icon: Icons.music_note, text: 'Music'),
-  GridItem(icon: Icons.shopping_cart, text: 'Cart'),
-  GridItem(icon: Icons.star, text: 'Favorites'),
-  GridItem(icon: Icons.movie, text: 'Movies'),
-  GridItem(icon: Icons.restaurant, text: 'Restaurant'),
-  GridItem(icon: Icons.map, text: 'Map'),
-  GridItem(icon: Icons.phone, text: 'Phone'),
-  GridItem(icon: Icons.watch, text: 'Watch'),
-  // Add more items to the list as needed
+final List<GridDrawerItem> gridDrawerItems = [
+  GridDrawerItem(icon: 'assets/images/drawer/Home.png', text: 'branchX'),
+  GridDrawerItem(icon: 'assets/images/drawer/safety 1.png', text: 'X Gold'),
+  GridDrawerItem(icon: 'assets/images/drawer/Wallet Icon 1.png', text: 'Scan & Pay'),
+  GridDrawerItem(icon: 'assets/images/drawer/Group 240542.png', text: 'Send Money'),
+  GridDrawerItem(icon: 'assets/images/drawer/Jewelry 1.png', text: 'Jewelry'),
+  GridDrawerItem(icon: 'assets/images/drawer/Group 240767.png', text: 'Spin Win'),
+  GridDrawerItem(icon: 'assets/images/drawer/quality-assurance.png', text: 'Rewards'),
+  GridDrawerItem(icon: 'assets/images/drawer/Wallet Icon 1.png', text: 'Wallet'),
+  GridDrawerItem(icon: 'assets/images/drawer/safety 1.png', text: 'Insurance'),
+  GridDrawerItem(icon: 'assets/images/drawer/bills 3.png', text: 'Pay Bills'),
+  GridDrawerItem(icon: 'assets/images/drawer/support 1.png', text: 'Support'),
+  GridDrawerItem(icon: 'assets/images/drawer/manual-book.png', text: 'Passbook'),
+  GridDrawerItem(icon: 'assets/images/drawer/Language 1.png', text: 'Language'),
+];
+
+final List<GridHomeItem> gridHomeItems = [
+  GridHomeItem(icon: 'assets/images/drawer/safety 1.png', text: 'Gold'),
+  GridHomeItem(icon: 'assets/images/drawer/Wallet Icon 1.png', text: 'Scan & Pay'),
+  GridHomeItem(icon: 'assets/images/drawer/Jewelry 1.png', text: 'Jewelry'),
+  GridHomeItem(icon: 'assets/images/drawer/safety 1.png', text: 'Insurance'),
+  GridHomeItem(icon: 'assets/images/home/send-mail.png', text: 'Refer & Earn'),
+  GridHomeItem(icon: 'assets/images/drawer/Group 240767.png', text: 'Spin Win'),
+  GridHomeItem(icon: 'assets/images/home/Group 240542.png', text: 'Send Money'),
+  GridHomeItem(icon: 'assets/images/drawer/Wallet Icon 1.png', text: 'Recharge & Bill'),
+  GridHomeItem(icon: 'assets/images/drawer/manual-book.png', text: 'Passbook'),
+];
+
+final List<GridBillsItem> gridBillsItems = [
+  GridBillsItem(icon: 'assets/images/home/Bills.png', text: 'Bills'),
+  GridBillsItem(icon: 'assets/images/home/Recharge.png', text: 'Recharge'),
+  GridBillsItem(icon: 'assets/images/home/DTH.png', text: 'DTH'),
+  GridBillsItem(icon: 'assets/images/home/Electricity.png', text: 'Electricity'),
+  GridBillsItem(icon: 'assets/images/home/Internet.png', text: 'Internet'),
+  GridBillsItem(icon: 'assets/images/home/Postpaid.png', text: 'Postpaid'),
+  GridBillsItem(icon: 'assets/images/home/Water Bill.png', text: 'Water Bill'),
+  GridBillsItem(icon: 'assets/images/home/View All.png', text: 'View All'),
 ];

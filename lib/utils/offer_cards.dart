@@ -16,70 +16,83 @@ class OfferCards extends StatelessWidget {
         ),
         child: Padding(
           padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 20),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          child: Stack(
             children: [
-              const Row(
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
+                  Row(
                     children: [
-                      SizedBox(
-                        width: 190,
-                        child: Text(
-                          'Introducing branchX Gold',
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 18,
-                            fontWeight: FontWeight.bold,
-                            letterSpacing: 2,
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          SizedBox(
+                            width: 190,
+                            child: Text(
+                              'Introducing branchX Gold',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
+                                letterSpacing: 2,
+                              ),
+                              maxLines: 2,
+                              overflow: TextOverflow.ellipsis,
+                            ),
                           ),
-                          maxLines: 2,
-                          overflow: TextOverflow.ellipsis,
-                        ),
-                      ),
-                      SizedBox(
-                        height: 20,
-                      ),
-                      SizedBox(
-                        width: 205,
-                        child: Text(
-                          'Buy digital gold, sell gold, Jewelry and get gold coins.',
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 16,
+                          SizedBox(
+                            height: 20,
                           ),
-                          maxLines: 2,
-                          overflow: TextOverflow.ellipsis,
-                        ),
+                          SizedBox(
+                            width: 205,
+                            child: Text(
+                              'Buy digital gold, sell gold, Jewelry and get gold coins.',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 16,
+                              ),
+                              maxLines: 2,
+                              overflow: TextOverflow.ellipsis,
+                            ),
+                          ),
+                        ],
                       ),
+                      Image.asset('assets/images/home/xenie.png')
                     ],
                   ),
                 ],
               ),
-              SizedBox(
-                height: 35,
-                width: MediaQuery.sizeOf(context).width,
-                child: ElevatedButton(
-                  style: ButtonStyle(
-                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                        RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(8),
-                    )),
-                    backgroundColor: MaterialStateProperty.all(Colors.white),
-                  ),
-                  onPressed: () {},
-                  child: Text(
-                    'Register now'.toUpperCase(),
-                    style: const TextStyle(color: Colors.black),
+              Positioned(
+                bottom: 0,
+                right: 0,
+                left: 0,
+                child: SizedBox(
+                  height: 35,
+                  width: MediaQuery.sizeOf(context).width,
+                  child: ElevatedButton(
+                    style: ButtonStyle(
+                      shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                          RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(8),
+                      )),
+                      backgroundColor: MaterialStateProperty.all(Colors.white),
+                    ),
+                    onPressed: () {},
+                    child: Text(
+                      'Register now'.toUpperCase(),
+                      style: const TextStyle(color: Colors.black),
+                    ),
                   ),
                 ),
               )
             ],
           ),
+
+
         ),
       ),
     );
   }
 }
+
