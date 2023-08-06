@@ -10,7 +10,7 @@ class BillsTile extends StatelessWidget {
     return Column(
       children: [
         Container(
-          height: 67,
+          height: 61,
           width: 67,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(8),

@@ -23,7 +23,10 @@ class _GoldCardTileState extends State<GoldCardTile>
           gradient: const LinearGradient(
             begin: Alignment.centerRight,
             end: Alignment.centerLeft,
-            colors: [Color.fromARGB(197, 162, 101, 1), Color.fromARGB(146, 119, 72, 1)],
+            colors: [
+              Color.fromARGB(197, 162, 101, 1),
+              Color.fromARGB(146, 119, 72, 1)
+            ],
           ),
         ),
         child: Stack(
@@ -113,7 +116,7 @@ class _GoldCardTileState extends State<GoldCardTile>
                       _isTapped
                           ? SizedBox(
                               height: 35,
-                              width: 150,
+                              width: 155,
                               child: ElevatedButton(
                                 style: ButtonStyle(
                                   shape: MaterialStateProperty.all<
@@ -128,12 +131,13 @@ class _GoldCardTileState extends State<GoldCardTile>
                                 onPressed: () {},
                                 child: Text(
                                   'Buy Jewelry'.toUpperCase(),
+                                  style: TextStyle(fontSize: 12),
                                 ),
                               ),
                             )
                           : SizedBox(
                               height: 35,
-                              width: 150,
+                              width: 155,
                               child: ElevatedButton(
                                 style: ButtonStyle(
                                   shape: MaterialStateProperty.all<
@@ -148,13 +152,14 @@ class _GoldCardTileState extends State<GoldCardTile>
                                 onPressed: () {},
                                 child: Text(
                                   'Deliver Gold'.toUpperCase(),
+                                  style: TextStyle(fontSize: 12),
                                 ),
                               ),
                             ),
                       _isTapped
                           ? SizedBox(
                               height: 35,
-                              width: 150,
+                              width: 155,
                               child: ElevatedButton(
                                 style: ButtonStyle(
                                   shape: MaterialStateProperty.all<
@@ -169,13 +174,16 @@ class _GoldCardTileState extends State<GoldCardTile>
                                 onPressed: () {},
                                 child: Text(
                                   'Buy Gold'.toUpperCase(),
-                                  style: const TextStyle(color: Colors.black),
+                                  style: const TextStyle(
+                                    fontSize: 12,
+                                    color: Colors.black,
+                                  ),
                                 ),
                               ),
                             )
                           : SizedBox(
                               height: 35,
-                              width: 150,
+                              width: 155,
                               child: ElevatedButton(
                                 style: ButtonStyle(
                                   shape: MaterialStateProperty.all<
@@ -190,7 +198,10 @@ class _GoldCardTileState extends State<GoldCardTile>
                                 onPressed: () {},
                                 child: Text(
                                   'Sell Gold'.toUpperCase(),
-                                  style: const TextStyle(color: Colors.black),
+                                  style: const TextStyle(
+                                    fontSize: 12,
+                                    color: Colors.black,
+                                  ),
                                 ),
                               ),
                             ),

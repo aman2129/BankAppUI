@@ -56,7 +56,7 @@ class _BlueCardTileState extends State<BlueCardTile> with TickerProviderStateMix
         ..setEntry(3, 2, 0.001)
         ..rotateY(rotationValue),
       child: Container(
-        height: 250,
+        height: 255,
         width: 370,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(15),
@@ -154,7 +154,7 @@ class _BlueCardTileState extends State<BlueCardTile> with TickerProviderStateMix
                     children: [
                       SizedBox(
                         height: 35,
-                        width: 140,
+                        width: 155,
                         child: ElevatedButton(
                           style: ButtonStyle(
                             shape:
@@ -173,7 +173,7 @@ class _BlueCardTileState extends State<BlueCardTile> with TickerProviderStateMix
                       ),
                       SizedBox(
                         height: 35,
-                        width: 140,
+                        width: 155,
                         child: ElevatedButton(
                           style: ButtonStyle(
                             shape:
@@ -309,7 +309,7 @@ class _BlueCardTileState extends State<BlueCardTile> with TickerProviderStateMix
                       ],
                     ),
                     const SizedBox(
-                      height: 35,
+                      height: 10,
                     ),
                     const Text(
                       'Account No.',

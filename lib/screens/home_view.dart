@@ -138,7 +138,8 @@ class _HomeViewState extends State<HomeView> {
                     itemCount: gridHomeItems.length,
                     gridDelegate:
                         const SliverGridDelegateWithFixedCrossAxisCount(
-                            crossAxisCount: 3),
+                      crossAxisCount: 3,
+                    ),
                     itemBuilder: (context, index) {
                       return FeaturesTile(
                         icon: gridHomeItems[index].icon,
@@ -211,7 +212,7 @@ class _HomeViewState extends State<HomeView> {
                           itemCount: gridBillsItems.length,
                           gridDelegate:
                               const SliverGridDelegateWithFixedCrossAxisCount(
-                                  crossAxisCount: 4, mainAxisSpacing: 15),
+                                  crossAxisCount: 4, mainAxisSpacing: 25),
                           itemBuilder: (context, index) {
                             return BillsTile(
                               icon: gridBillsItems[index].icon,
